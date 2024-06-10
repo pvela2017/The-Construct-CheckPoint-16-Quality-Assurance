@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find tortoisebot_gazebo)/launch/tortoisebot_playground.launch"/>
+  <node pkg="tortoisebot_waypoints" type="tortoisebot_action_server.py" name="tortoisebot_action_server_node" />
+  <test test-name="waypoint_test" pkg="tortoisebot_waypoints" type="waypoint_test.py" />
+</launch>
